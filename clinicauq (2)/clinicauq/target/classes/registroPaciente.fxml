@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="361.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.clinicauq.controladores.RegistroPacienteControlador">
+    <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="161.0" text="Registro Paciente">
+        <font>
+            <Font size="20.0" />
+        </font></Label>
+
+    <Label layoutX="14.0" layoutY="65.0" text="Cédula:" />
+    <TextField fx:id="cedulatxt" layoutX="131.0" layoutY="61.0" />
+    <Label layoutX="14.0" layoutY="100.0" text="Nombre:" />
+    <TextField fx:id="nombretxt" layoutX="131.0" layoutY="96.0" />
+    <Label layoutX="14.0" layoutY="134.0" text="Teléfono:" />
+    <TextField fx:id="telefonotxt" layoutX="131.0" layoutY="130.0" />
+    <Label layoutX="14.0" layoutY="168.0" text="Correo:" />
+    <TextField fx:id="correotxt" layoutX="131.0" layoutY="164.0" />
+    <Label layoutX="14.0" layoutY="203.0" text="Tipo de Suscripción:" />
+    <ComboBox fx:id="tipoSuscripcionComboBox" layoutX="130.0" layoutY="199.0" minWidth="150.0" />
+    <Button fx:id="btnregistrarPaciente" onAction="#registrarPaciente" layoutX="116.0" layoutY="244.0" text="Registrar" />
+
+</AnchorPane>

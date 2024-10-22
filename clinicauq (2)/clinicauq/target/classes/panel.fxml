@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox spacing="20.0" style="-fx-padding: 30px" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.clinicauq.controladores.PanelControlador">
+
+    <VBox alignment="BASELINE_CENTER" minWidth="200.0" spacing="20.0">
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <ImageView fitWidth="50.0" preserveRatio="true">
+                <Image url="@img/LogoClinicaUQ.png" />
+            </ImageView>
+            <Label text="Panel de la clínica">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+        </HBox>
+
+        <Button fx:id="botonRegistrarPacientes" minWidth="200.0" onAction="#mostrarRegistroPaciente" text="Registrar paciente" />
+        <Button fx:id="botonListarPacientes" minWidth="200.0" onAction="#mostrarListarPacientes" text="Listar pacientes" />
+        <Button fx:id="botonCrearCita" minWidth="200.0" onAction="#mostrarRegistroCita" text="Crear cita" />
+        <Button fx:id="botonListarCita" minWidth="200.0" onAction="#mostrarListaCitas" text="Listar citas" />
+      <HBox.margin>
+         <Insets left="15.0" />
+      </HBox.margin>
+    </VBox>
+
+    <StackPane fx:id="panelPrincipal" HBox.hgrow="ALWAYS" />
+
+</HBox>
